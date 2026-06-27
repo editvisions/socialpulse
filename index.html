@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SocialPulse - Custom Websites That Help Small Businesses Sell</title>
+<meta name="description" content="SocialPulse builds fast, custom websites for small businesses that need more trust, more enquiries, and a sharper online presence. Book a call, get a free demo in 3 days, then decide after seeing the work.">
+<meta name="author" content="SocialPulse">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://socialpulse.md/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SocialPulse">
+<meta property="og:title" content="SocialPulse - Custom Websites That Help Small Businesses Sell">
+<meta property="og:description" content="Fast, custom websites you actually own. Book a call, get a free demo in 3 days, then decide after seeing the work.">
+<meta property="og:url" content="https://socialpulse.md/">
+<meta property="og:image" content="https://socialpulse.md/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SocialPulse - Custom Websites That Help Small Businesses Sell">
+<meta name="twitter:description" content="Fast, custom websites you actually own. Book a call, get a free demo in 3 days, then decide after seeing the work.">
+<meta name="twitter:image" content="https://socialpulse.md/og-image.png">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23E8321A'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-style='italic' font-size='21' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SocialPulse",
+  "description": "A web design and development studio building custom, fast, SEO-ready websites for small businesses.",
+  "url": "https://socialpulse.md/",
+  "areaServed": "International",
+  "serviceType": ["Web design", "Web development", "E-commerce", "SEO"]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0A0A0A;
+  --white:#FAFAF8;
+  --red:#E8321A;
+  --red-dark:#C02510;
+  --red-pale:#FFF0ED;
+  --gray:#888;
+  --line:#E8E6E1;
+  --card:#FFFFFF;
+  --serif:'Instrument Serif',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--sans);background:var(--white);color:var(--black);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:0 5vw;height:64px;
+  background:rgba(250,250,248,0.96);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.logo{font-family:var(--serif);font-size:1.3rem;letter-spacing:-0.01em;color:var(--black);text-decoration:none}
+.logo b{color:var(--red);font-style:italic;font-weight:400}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+.nav-links a{font-size:0.8rem;font-weight:400;color:var(--gray);text-decoration:none;letter-spacing:0.04em;transition:color .15s}
+.nav-links a:hover{color:var(--black)}
+.nav-cta{background:var(--black) !important;color:var(--white) !important;padding:0.5rem 1.2rem !important;border-radius:4px;transition:background .15s !important}
+.nav-cta:hover{background:#333 !important;color:var(--white) !important}
+
+/* HERO */
+#hero{
+  min-height:100vh;padding:9rem 5vw 6rem;
+  display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;
+  border-bottom:1px solid var(--line);
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);
+  margin-bottom:2rem;
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--red);animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+h1{
+  font-family:var(--serif);
+  font-size:clamp(2.8rem,5.5vw,5.2rem);
+  font-weight:400;line-height:1.0;letter-spacing:-0.02em;color:var(--black);
+}
+h1 i{font-style:italic;color:var(--red)}
+.hero-sub{
+  margin-top:1.8rem;font-size:1.05rem;font-weight:300;line-height:1.75;
+  color:#444;max-width:48ch;
+}
+.hero-location{
+  margin-top:1rem;display:inline-flex;align-items:center;gap:0.4rem;
+  font-size:0.78rem;color:var(--gray);
+}
+.hero-location span{color:var(--red);font-weight:500}
+.hero-actions{margin-top:2.5rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.btn-red{
+  background:var(--red);color:#fff;padding:0.9rem 2rem;
+  border-radius:4px;font-size:0.9rem;font-weight:500;text-decoration:none;
+  transition:background .15s;white-space:nowrap;display:inline-block;
+}
+.btn-red:hover{background:var(--red-dark)}
+.btn-outline{
+  color:var(--black);font-size:0.9rem;font-weight:400;
+  text-decoration:none;border-bottom:1px solid var(--black);padding-bottom:1px;
+  transition:color .15s,border-color .15s;
+}
+.btn-outline:hover{color:var(--red);border-color:var(--red)}
+.hero-right{display:flex;flex-direction:column;gap:1rem}
+.stat-card{
+  background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:1.5rem 1.8rem;
+}
+.stat-card .num{
+  font-family:var(--serif);font-size:2.8rem;font-style:italic;
+  color:var(--black);line-height:1;letter-spacing:-0.02em;
+}
+.stat-card .num span{color:var(--red)}
+.stat-card p{font-size:0.8rem;color:var(--gray);margin-top:0.4rem;line-height:1.5}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+/* MARQUEE */
+.marquee-wrap{
+  overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:0.8rem 0;background:var(--black);
+}
+.marquee{display:flex;gap:2rem;width:max-content;animation:marquee 24s linear infinite}
+.marquee span{white-space:nowrap;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:#555}
+.marquee span.hi{color:#fff}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:7rem 5vw;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);font-weight:500;margin-bottom:1rem}
+h2{
+  font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.4rem);
+  font-weight:400;line-height:1.05;letter-spacing:-0.02em;
+  max-width:22ch;margin-bottom:3rem;
+}
+
+/* SERVICES */
+#services .inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.serv-list{display:flex;flex-direction:column}
+.serv-item{
+  padding:1.8rem 0;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;
+  transition:padding-left .2s;cursor:default;
+}
+.serv-item:hover{padding-left:0.5rem}
+.serv-item:first-child{border-top:1px solid var(--line)}
+.serv-left h3{font-family:var(--serif);font-size:1.25rem;font-weight:400;font-style:italic;margin-bottom:0.4rem}
+.serv-left p{font-size:0.85rem;color:#555;line-height:1.65}
+.serv-tag{
+  font-size:0.72rem;font-weight:500;color:var(--red);
+  background:var(--red-pale);padding:0.3rem 0.7rem;border-radius:3px;
+  white-space:nowrap;flex-shrink:0;margin-top:2px;
+}
+.serv-tag.web{background:#EEF4FF;color:#2250C4}
+.serv-aside{position:sticky;top:90px}
+.big-quote{
+  font-family:var(--serif);font-size:1.8rem;font-style:italic;
+  line-height:1.3;color:var(--black);margin-bottom:2rem;
+}
+.big-quote span{color:var(--red)}
+.package-card{
+  background:var(--black);color:var(--white);border-radius:8px;
+  padding:2rem;margin-bottom:1rem;
+}
+.package-card .pkg-label{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:#888;margin-bottom:0.5rem}
+.package-card .pkg-title{font-family:var(--serif);font-size:2rem;font-style:italic;color:#fff}
+.package-card .pkg-desc{font-size:0.82rem;color:#aaa;margin-top:0.5rem;line-height:1.6}
+.package-card.featured{background:var(--red)}
+.package-card.featured .pkg-label{color:rgba(255,255,255,0.6)}
+.package-card.featured .pkg-desc{color:rgba(255,255,255,0.85)}
+
+/* HOW */
+#how .inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem}
+.steps{display:flex;flex-direction:column}
+.step{
+  display:grid;grid-template-columns:60px 1fr;gap:1.5rem;
+  padding:2rem 0;border-bottom:1px solid var(--line);
+}
+.step:first-child{border-top:1px solid var(--line)}
+.step-n{
+  font-family:var(--serif);font-size:2.5rem;font-style:italic;
+  color:var(--line);line-height:1;padding-top:2px;
+}
+.step-body h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;margin-bottom:0.5rem}
+.step-body p{font-size:0.85rem;color:#555;line-height:1.7}
+.how-aside{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:90px}
+.result-card{border:1px solid var(--line);border-radius:8px;padding:1.5rem;background:var(--card)}
+.result-card .r-num{font-family:var(--serif);font-size:2.2rem;font-style:italic;color:var(--red)}
+.result-card .r-label{font-size:0.8rem;color:var(--gray);margin-top:0.2rem}
+.result-card .r-bar{height:3px;background:var(--line);border-radius:2px;margin-top:1rem;overflow:hidden}
+.result-card .r-fill{height:100%;background:var(--red);border-radius:2px;width:0;transition:width 1.5s ease}
+
+/* PROOF */
+#testimonials{background:var(--black);border-bottom:none}
+#testimonials .eyebrow{color:#555}
+#testimonials h2{color:var(--white)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testi-card{border:1px solid #1e1e1e;border-radius:8px;padding:2rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem}
+.testi-text{font-size:0.95rem;color:#bbb;line-height:1.75;font-style:italic;font-family:var(--serif)}
+.testi-text::before{content:'';width:22px;height:2px;background:var(--red);display:block;margin-bottom:0.8rem}
+.testi-author{display:flex;align-items:center;gap:0.8rem}
+.testi-avatar{width:36px;height:36px;border-radius:50%;background:#1e1e1e;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:500;color:#666;flex-shrink:0}
+.testi-name{font-size:0.82rem;color:#fff;font-weight:500}
+.testi-biz{font-size:0.75rem;color:#555}
+
+/* PORTFOLIO */
+#portfolio{background:#fff}
+.portfolio-intro{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  gap:3rem;margin-bottom:3rem;
+}
+.portfolio-intro h2{margin-bottom:0}
+.portfolio-note{max-width:50ch;color:#555;font-size:0.95rem;line-height:1.75}
+.project-stack{display:flex;flex-direction:column;gap:2rem}
+.project-card{
+  background:var(--card);border:1px solid var(--line);border-radius:8px;
+  padding:clamp(1rem,2vw,1.5rem);
+}
+.project-head{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  gap:2rem;margin-bottom:1rem;
+}
+.project-head h3{font-family:var(--serif);font-size:1.65rem;font-weight:400;font-style:italic;margin-bottom:0.35rem}
+.project-head p{font-size:0.9rem;color:#555;line-height:1.65;max-width:52ch}
+.project-type{
+  font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);
+  background:var(--red-pale);border-radius:3px;padding:0.32rem 0.7rem;white-space:nowrap;
+}
+.preview-grid{display:flex;flex-direction:column;gap:1.6rem}
+.preview-panel{
+  position:relative;overflow:auto;border:1px solid var(--line);border-radius:8px;
+  background:#f3f2ef;max-width:100%;-webkit-overflow-scrolling:touch;
+}
+.preview-top{
+  height:38px;background:var(--black);color:#fff;display:flex;align-items:center;
+  justify-content:space-between;gap:1rem;padding:0 0.9rem;
+  font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;
+}
+.preview-top span:last-child{color:#777;text-transform:none;letter-spacing:0;font-size:0.72rem}
+.preview-frame{
+  width:1440px;height:720px;max-width:none;border:0;display:block;background:#fff;
+}
+.preview-note{font-size:0.74rem;color:#777;line-height:1.5;margin-top:0.8rem;margin-bottom:0.2rem}
+
+/* WEB DESIGN SECTION */
+#webdesign{background:#F5F4FF}
+#webdesign .inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.web-features{display:flex;flex-direction:column;gap:1rem;margin-top:2rem}
+.web-feat{
+  display:flex;gap:1rem;padding:1.2rem 1.5rem;
+  background:var(--card);border:1px solid var(--line);border-radius:8px;
+  align-items:flex-start;transition:border-color .2s;
+}
+.web-feat:hover{border-color:#bbb}
+.web-feat-icon{
+  width:36px;height:36px;border-radius:6px;background:#EEF4FF;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;flex-shrink:0;color:#2250C4;
+}
+.web-feat h4{font-size:0.9rem;font-weight:500;margin-bottom:0.2rem}
+.web-feat p{font-size:0.8rem;color:#666;line-height:1.55}
+.web-aside-text{font-family:var(--serif);font-size:1.5rem;font-style:italic;line-height:1.4;color:var(--black);margin-bottom:1.5rem}
+.web-aside-text span{color:#2250C4}
+.web-note{font-size:0.85rem;color:#555;line-height:1.7;margin-bottom:2rem}
+.btn-blue{
+  display:inline-block;background:#2250C4;color:#fff;
+  padding:0.9rem 2rem;border-radius:4px;font-size:0.9rem;
+  font-weight:500;text-decoration:none;transition:background .15s;
+}
+.btn-blue:hover{background:#1a3fa0}
+
+/* CONTACT */
+#contact .inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+#contact h2{margin-bottom:1.5rem}
+.contact-sub{font-size:0.95rem;color:#555;line-height:1.75;max-width:44ch;margin-bottom:2.5rem}
+.calendly-card{
+  background:var(--card);border:1px solid var(--line);border-radius:8px;
+  overflow:hidden;box-shadow:0 18px 45px -35px rgba(0,0,0,.35);
+}
+.calendly-head{padding:1.2rem 1.4rem;border-bottom:1px solid var(--line);background:#fff}
+.calendly-head h3{font-family:var(--serif);font-size:1.35rem;font-weight:400;font-style:italic;margin-bottom:0.25rem}
+.calendly-head p{font-size:0.82rem;color:#666;line-height:1.6}
+.calendly-inline-widget{min-width:320px;height:660px}
+.calendly-placeholder{
+  min-height:520px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#fff 0%,#f7f6f2 100%);padding:2rem;
+}
+.calendar-mock{
+  width:min(100%,420px);border:1px solid var(--line);border-radius:8px;background:#fff;
+  padding:1.2rem;box-shadow:0 18px 40px -32px rgba(0,0,0,.35);
+}
+.calendar-mock-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.calendar-mock-title{font-family:var(--serif);font-size:1.35rem;font-style:italic;color:var(--black)}
+.calendar-mock-badge{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:var(--red);padding:0.3rem 0.55rem;border-radius:3px}
+.calendar-slots{display:grid;grid-template-columns:1fr 1fr;gap:0.55rem}
+.calendar-slots span{border:1px solid var(--line);border-radius:4px;padding:0.75rem;text-align:center;font-size:0.82rem;color:#444;background:#fafafa}
+.calendar-mock-note{font-size:0.78rem;color:#777;line-height:1.55;margin-top:1rem}
+.contact-points{list-style:none;display:flex;flex-direction:column;gap:0.8rem;margin-top:2rem;max-width:42ch}
+.contact-points li{font-size:0.86rem;color:#444;line-height:1.6;display:flex;gap:0.55rem}
+.contact-points li::before{content:'→';color:var(--red);flex-shrink:0}
+
+/* FOOTER */
+footer{
+  padding:2.5rem 5vw;display:flex;justify-content:space-between;align-items:center;
+  border-top:1px solid var(--line);flex-wrap:wrap;gap:1rem;
+}
+.footer-logo{font-family:var(--serif);font-size:1.1rem;color:var(--black);text-decoration:none}
+.footer-logo b{color:var(--red);font-style:italic;font-weight:400}
+.footer-copy{font-size:0.75rem;color:var(--gray)}
+.footer-links{display:flex;gap:1.5rem;list-style:none}
+.footer-links a{font-size:0.75rem;color:var(--gray);text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:var(--black)}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  #hero{grid-template-columns:1fr;gap:3rem}
+  .hero-right{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .stat-row{grid-template-columns:1fr}
+  #services .inner,#how .inner,#contact .inner,#webdesign .inner{grid-template-columns:1fr;gap:3rem}
+  .portfolio-intro,.project-head{display:block}
+  .portfolio-note{margin-top:1rem}
+  .testi-grid{grid-template-columns:1fr}
+  .serv-aside,.how-aside{position:static}
+  section{padding:5rem 5vw}
+  .nav-links{display:none}
+}
+@media(max-width:560px){
+  .hero-right{grid-template-columns:1fr}
+  .preview-panel{overflow:hidden}
+  .preview-frame{width:100%;max-width:100%;height:640px}
+}
+
+
+/* ===== ADDED: mobile menu (desktop design unchanged) ===== */
+.burger{display:none;width:42px;height:42px;border:1px solid var(--line);background:#fff;border-radius:8px;cursor:pointer;align-items:center;justify-content:center;padding:0}
+.burger span{position:relative;display:block;width:18px;height:2px;background:var(--black);border-radius:2px;transition:.2s}
+.burger span::before,.burger span::after{content:'';position:absolute;left:0;width:18px;height:2px;background:var(--black);border-radius:2px;transition:.2s}
+.burger span::before{top:-6px}
+.burger span::after{top:6px}
+body.menu-open .burger span{background:transparent}
+body.menu-open .burger span::before{top:0;transform:rotate(45deg)}
+body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
+@media(max-width:960px){
+  .burger{display:inline-flex}
+  .nav-links{
+    position:fixed;left:0;right:0;top:64px;display:flex !important;
+    flex-direction:column;align-items:stretch;gap:0.25rem;
+    background:rgba(250,250,248,0.98);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);padding:1rem 5vw 1.4rem;
+    transform:translateY(-135%);transition:transform .26s ease;
+    box-shadow:0 18px 36px -20px rgba(0,0,0,.18);
+  }
+  body.menu-open .nav-links{transform:translateY(0)}
+  .nav-links a{padding:0.85rem 0.4rem;font-size:0.95rem}
+  .nav-cta{text-align:center;margin-top:0.3rem}
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="logo">Social<b>Pulse</b></a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#how">Process</a></li>
+    <li><a href="#contact" class="nav-cta">Book a call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Custom websites for ambitious small businesses
+    </div>
+    <h1>A website that feels like your best <i>salesperson.</i></h1>
+    <p class="hero-sub">We turn your business into a sharp, trust-building website that explains what you do, shows why it matters, and makes it easy for the right people to take the next step.</p>
+    <div class="hero-location">
+      First call, free 3-day demo, then a clear plan if you want to move forward.
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-red">Book your free call &rarr;</a>
+      <a href="#portfolio" class="btn-outline">See the work</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="stat-card">
+      <div class="num">3<span>d</span></div>
+      <p>Free demo website prepared after our first call, so you can judge the direction before committing.</p>
+    </div>
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="num"><span>&lt;</span>2s</div>
+        <p>Fast loading pages that feel smooth on phone, tablet, and desktop.</p>
+      </div>
+      <div class="stat-card">
+        <div class="num">100<span>%</span></div>
+        <p>Custom design, no templates, and the finished website belongs to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span class="hi">Web Design</span><span>·</span><span>Web Development</span><span>·</span>
+    <span class="hi">Landing Pages</span><span>·</span><span>E-commerce</span><span>·</span>
+    <span class="hi">Booking Systems</span><span>·</span><span>SEO Setup</span><span>·</span>
+    <span class="hi">Free 3-Day Demo</span><span>·</span><span>Website Redesigns</span><span>·</span>
+    <span class="hi">Web Design</span><span>·</span><span>Web Development</span><span>·</span>
+    <span class="hi">Landing Pages</span><span>·</span><span>E-commerce</span><span>·</span>
+    <span class="hi">Booking Systems</span><span>·</span><span>SEO Setup</span><span>·</span>
+    <span class="hi">Free 3-Day Demo</span><span>·</span><span>Website Redesigns</span><span>·</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="inner">
+    <div>
+      <p class="eyebrow">What we do</p>
+      <h2>Websites built to make the next step obvious.</h2>
+      <div class="serv-list">
+        <div class="serv-item">
+          <div class="serv-left">
+            <h3>Business Websites</h3>
+            <p>A polished website that explains your offer clearly, answers the doubts buyers have, and makes it easy to enquire or book.</p>
+          </div>
+          <span class="serv-tag">Trust builder</span>
+        </div>
+        <div class="serv-item">
+          <div class="serv-left">
+            <h3>Landing Pages</h3>
+            <p>One focused page for one clear offer, launch, or campaign. Built to keep people moving instead of wandering away.</p>
+          </div>
+          <span class="serv-tag">Conversion focused</span>
+        </div>
+        <div class="serv-item">
+          <div class="serv-left">
+            <h3>E-commerce Stores</h3>
+            <p>A clean store experience with product pages, checkout, and management tools that feel simple after launch.</p>
+          </div>
+          <span class="serv-tag">Built to sell</span>
+        </div>
+        <div class="serv-item">
+          <div class="serv-left">
+            <h3>Booking Systems</h3>
+            <p>Let people book appointments, tables, or services themselves, with a flow that saves you messages and missed opportunities.</p>
+          </div>
+          <span class="serv-tag">Less admin</span>
+        </div>
+        <div class="serv-item">
+          <div class="serv-left">
+            <h3>Website Redesigns</h3>
+            <p>If your current site looks dated, loads slowly, or undersells you, we rebuild it into something clearer, faster, and easier to trust.</p>
+          </div>
+          <span class="serv-tag">Before / after</span>
+        </div>
+        <div class="serv-item">
+          <div class="serv-left">
+            <h3>SEO &amp; Analytics Setup</h3>
+            <p>We set up the basics properly so search engines can understand the site and you can see what visitors are doing.</p>
+          </div>
+          <span class="serv-tag">Ready to learn</span>
+        </div>
+      </div>
+    </div>
+    <div class="serv-aside">
+      <p class="big-quote">"You already know the business. We shape it into a website people can <span>believe in.</span>"</p>
+      <div class="package-card">
+        <div class="pkg-label">First step</div>
+        <div class="pkg-title">Free demo</div>
+        <div class="pkg-desc">After our first call, we create a real website direction in 3 days so you can see the idea before deciding.</div>
+      </div>
+      <div class="package-card featured">
+        <div class="pkg-label">Then decide</div>
+        <div class="pkg-title">Clear plan</div>
+        <div class="pkg-desc">On the second call, we walk through the demo, answer questions, and agree on the scope, timeline, and price.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WEB DESIGN -->
+<section id="webdesign">
+  <div class="inner">
+    <div>
+      <p class="eyebrow">Web Design &amp; Development</p>
+      <h2>Built to earn trust before anyone speaks to you.</h2>
+      <div class="web-features">
+        <div class="web-feat">
+          <div class="web-feat-icon">◻</div>
+          <div>
+            <h4>Custom design, no templates</h4>
+            <p>Every site is designed around your offer, your customers, and the way people actually decide to buy.</p>
+          </div>
+        </div>
+        <div class="web-feat">
+          <div class="web-feat-icon">⚡</div>
+          <div>
+            <h4>Fast and mobile-ready</h4>
+            <p>Your site feels quick and polished on every screen, because slow and awkward pages quietly lose buyers.</p>
+          </div>
+        </div>
+        <div class="web-feat">
+          <div class="web-feat-icon">🔍</div>
+          <div>
+            <h4>Friendly with Google</h4>
+            <p>We structure the pages so search engines can read them properly, with clean titles, descriptions, and page content.</p>
+          </div>
+        </div>
+        <div class="web-feat">
+          <div class="web-feat-icon">🛒</div>
+          <div>
+            <h4>Shops and booking built in</h4>
+            <p>Sell products, take bookings, collect payments, or qualify leads with flows that feel natural to customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="web-aside-text">Your website is often the first serious moment of trust. We make it feel clear, confident, and easy to say <span>yes</span> to.</p>
+      <p class="web-note">You know your business better than anyone. We help turn that knowledge into the right structure, words, visuals, and calls to action so visitors understand the value quickly.</p>
+      <p class="web-note" style="margin-bottom:1.5rem">The first demo is free. You get to see the direction before we talk through the full build, the details, and whether it makes sense to continue.</p>
+      <a href="#contact" class="btn-blue">Book the first call &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="portfolio-intro">
+    <div>
+      <p class="eyebrow">Portfolio</p>
+      <h2>Before and after work you can actually compare.</h2>
+    </div>
+    <p class="portfolio-note">A good redesign should make the business easier to trust, easier to understand, and easier to contact. These previews show where each project started and where it ended up.</p>
+  </div>
+
+  <div class="project-stack">
+    <article class="project-card">
+      <div class="project-head">
+        <div>
+          <h3>EditVisions</h3>
+          <p>From a simple Framer draft to a sharper brand website with clearer positioning, stronger visual hierarchy, and a more confident first impression.</p>
+        </div>
+        <span class="project-type">Creative studio</span>
+      </div>
+      <div class="preview-grid">
+        <div>
+          <div class="preview-panel">
+            <div class="preview-top"><span>Before</span><span>Scrollable preview</span></div>
+            <iframe class="preview-frame" src="https://editvisions.framer.website/" title="EditVisions before preview" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin" scrolling="yes" tabindex="0"></iframe>
+          </div>
+          <p class="preview-note">Before: early version with less polish and less trust on the first screen.</p>
+        </div>
+        <div>
+          <div class="preview-panel">
+            <div class="preview-top"><span>After</span><span>Scrollable preview</span></div>
+            <iframe class="preview-frame" src="https://www.editvisions.com/" title="EditVisions after preview" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin" scrolling="yes" tabindex="0"></iframe>
+          </div>
+          <p class="preview-note">After: stronger brand presence, clearer messaging, and a cleaner path to enquiry.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-head">
+        <div>
+          <h3>LemnArt Decor</h3>
+          <p>From a traditional product site to a more modern, visual experience that helps visitors understand the craft, browse confidently, and take action faster.</p>
+        </div>
+        <span class="project-type">Interior decor</span>
+      </div>
+      <div class="preview-grid">
+        <div>
+          <div class="preview-panel">
+            <div class="preview-top"><span>Before</span><span>Scrollable preview</span></div>
+            <iframe class="preview-frame" src="https://www.lemnartdecor.md/" title="LemnArt Decor before preview" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin" scrolling="yes" tabindex="0"></iframe>
+          </div>
+          <p class="preview-note">Before: useful information, but the presentation made it harder to feel the quality quickly.</p>
+        </div>
+        <div>
+          <div class="preview-panel">
+            <div class="preview-top"><span>After</span><span>Scrollable preview</span></div>
+            <iframe class="preview-frame" src="https://v0-lemnart.vercel.app/" title="LemnArt Decor after preview" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin" scrolling="yes" tabindex="0"></iframe>
+          </div>
+          <p class="preview-note">After: cleaner storytelling, stronger visuals, and a smoother way for buyers to explore the offer.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="inner">
+    <div>
+      <p class="eyebrow">How it works</p>
+      <h2>See the idea before you pay for the build.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-n">1</div>
+          <div class="step-body">
+            <h3>First call</h3>
+            <p>We talk through your business, your customers, your current website, and what needs to happen for the project to be worth it.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-n">2</div>
+          <div class="step-body">
+            <h3>Free demo in 3 days</h3>
+            <p>We create a small demo website direction at no cost, using your real business as the brief. You can see the style, structure, and message before making a decision.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-n">3</div>
+          <div class="step-body">
+            <h3>Second call</h3>
+            <p>We walk through the demo together, answer questions, and talk through the price, scope, timeline, and any details needed for the full website.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-n">4</div>
+          <div class="step-body">
+            <h3>Build and launch</h3>
+            <p>If it feels right, we build the full site, polish the copy and design, connect the essentials, and launch it with everything ready to use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how-aside">
+      <div class="result-card">
+        <div class="r-num">3 days</div>
+        <div class="r-label">To receive your free demo direction</div>
+        <div class="r-bar"><div class="r-fill" data-width="95"></div></div>
+      </div>
+      <div class="result-card">
+        <div class="r-num">2 calls</div>
+        <div class="r-label">One to understand, one to decide</div>
+        <div class="r-bar"><div class="r-fill" data-width="80"></div></div>
+      </div>
+      <div class="result-card">
+        <div class="r-num">0</div>
+        <div class="r-label">Upfront payment before the demo</div>
+        <div class="r-bar"><div class="r-fill" data-width="100"></div></div>
+      </div>
+      <div class="result-card">
+        <div class="r-num">100%</div>
+        <div class="r-label">Custom to your business and customers</div>
+        <div class="r-bar"><div class="r-fill" data-width="100"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <p class="eyebrow">Why it works</p>
+  <h2>The website starts selling before the sales call.</h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-text">People decide fast. We make the first screen explain who you help, why they should trust you, and what they should do next.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">01</div>
+        <div>
+          <div class="testi-name">Clear positioning</div>
+          <div class="testi-biz">No vague headline, no guessing</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-text">A beautiful site still needs structure. We build pages around questions real buyers ask before they contact you.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">02</div>
+        <div>
+          <div class="testi-name">Sales-minded pages</div>
+          <div class="testi-biz">Benefits, proof, objections, action</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-text">The free demo removes the awkward leap of faith. You can react to something real before we talk about the full project.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">03</div>
+        <div>
+          <div class="testi-name">Low-pressure start</div>
+          <div class="testi-biz">See the idea, then decide</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="inner">
+    <div>
+      <p class="eyebrow">Book a call</p>
+      <h2>Tell us what you want your website to do.</h2>
+      <p class="contact-sub">The first call is simple: we learn about your business, your customers, and what your current online presence is missing. No hard pitch. No pressure to buy on the spot.</p>
+      <p class="contact-sub">After the call, we create a free demo website in 3 days. Then we meet again, walk through it together, and talk about the price, timeline, and next steps only if the direction feels right.</p>
+      <ul class="contact-points">
+        <li>Best for businesses that want a clearer, more premium online presence.</li>
+        <li>You do not need perfect content before the call. A rough idea is enough.</li>
+        <li>The demo helps both sides decide with something real on the table.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="calendly-card">
+        <div class="calendly-head">
+          <h3>Book your intro call</h3>
+          <p>Choose a time for a short call about your business, your website, and the free demo direction.</p>
+        </div>
+
+        <!--
+          Calendly template:
+          1. Replace the data-url value below with your real Calendly event URL.
+          2. Remove the hidden attribute from this widget.
+          3. Remove the .calendly-placeholder block below it.
+        -->
+        <div class="calendly-inline-widget" hidden data-url="https://calendly.com/YOUR-CALENDLY-USERNAME/website-demo-call?hide_gdpr_banner=1"></div>
+        <div class="calendly-placeholder" aria-hidden="true">
+          <div class="calendar-mock">
+            <div class="calendar-mock-top">
+              <div class="calendar-mock-title">Website demo call</div>
+              <div class="calendar-mock-badge">Intro call</div>
+            </div>
+            <div class="calendar-slots">
+              <span>09:00</span>
+              <span>10:30</span>
+              <span>13:00</span>
+              <span>15:30</span>
+              <span>17:00</span>
+              <span>18:30</span>
+            </div>
+            <p class="calendar-mock-note">Your real availability will appear here once the Calendly event is connected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#hero" class="footer-logo">Social<b>Pulse</b></a>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#how">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 SocialPulse · Custom websites for growing businesses</p>
+</footer>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+/* keep: animate the result bars on scroll */
+const fills = document.querySelectorAll('.r-fill');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.style.width = e.target.dataset.width + '%';
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:0.3});
+fills.forEach(b => obs.observe(b));
+
+/* mobile menu toggle */
+(function(){
+  var burger = document.querySelector('.burger');
+  if(!burger) return;
+  burger.addEventListener('click', function(){
+    var open = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      document.body.classList.remove('menu-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.setAttribute('aria-label','Open menu');
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
