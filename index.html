@@ -290,20 +290,6 @@ h2{
 .calendly-head h3{font-family:var(--serif);font-size:1.35rem;font-weight:400;font-style:italic;margin-bottom:0.25rem}
 .calendly-head p{font-size:0.82rem;color:rgba(10,10,10,0.62);line-height:1.6}
 .calendly-inline-widget{min-width:320px;height:660px}
-.calendly-placeholder{
-  min-height:520px;display:flex;align-items:center;justify-content:center;
-  background:var(--red-pale);padding:2rem;
-}
-.calendar-mock{
-  width:min(100%,420px);border:1px solid var(--line);border-radius:8px;background:var(--white);
-  padding:1.2rem;box-shadow:0 18px 40px -32px rgba(0,0,0,.35);
-}
-.calendar-mock-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
-.calendar-mock-title{font-family:var(--serif);font-size:1.35rem;font-style:italic;color:var(--black)}
-.calendar-mock-badge{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--white);background:var(--red);padding:0.3rem 0.55rem;border-radius:3px}
-.calendar-slots{display:grid;grid-template-columns:1fr 1fr;gap:0.55rem}
-.calendar-slots span{border:1px solid var(--line);border-radius:4px;padding:0.75rem;text-align:center;font-size:0.82rem;color:rgba(10,10,10,0.72);background:var(--white)}
-.calendar-mock-note{font-size:0.78rem;color:rgba(10,10,10,0.56);line-height:1.55;margin-top:1rem}
 .contact-points{list-style:none;display:flex;flex-direction:column;gap:0.8rem;margin-top:2rem;max-width:42ch}
 .contact-points li{font-size:0.86rem;color:rgba(10,10,10,0.72);line-height:1.6;display:flex;gap:0.55rem}
 .contact-points li::before{content:'→';color:var(--red);flex-shrink:0}
@@ -728,30 +714,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
           <p>Choose a time for a short call about your business, your website, and the free demo direction.</p>
         </div>
 
-        <!--
-          Calendly template:
-          1. Replace the data-url value below with your real Calendly event URL.
-          2. Remove the hidden attribute from this widget.
-          3. Remove the .calendly-placeholder block below it.
-        -->
-        <div class="calendly-inline-widget" hidden data-url="https://calendly.com/YOUR-CALENDLY-USERNAME/website-demo-call?hide_gdpr_banner=1"></div>
-        <div class="calendly-placeholder" aria-hidden="true">
-          <div class="calendar-mock">
-            <div class="calendar-mock-top">
-              <div class="calendar-mock-title">Website demo call</div>
-              <div class="calendar-mock-badge">Intro call</div>
-            </div>
-            <div class="calendar-slots">
-              <span>09:00</span>
-              <span>10:30</span>
-              <span>13:00</span>
-              <span>15:30</span>
-              <span>17:00</span>
-              <span>18:30</span>
-            </div>
-            <p class="calendar-mock-note">Your real availability will appear here once the Calendly event is connected.</p>
-          </div>
-        </div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/mihai-solonari2010/30min?hide_gdpr_banner=1"></div>
       </div>
     </div>
   </div>
